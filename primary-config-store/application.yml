@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/avinashweb/spring-cloud-config
+          uri: https://github.com/avinashweb/spring-cloud-config/tree/master/primary-config-store
           search-paths:
            - '*service'
 
