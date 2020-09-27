@@ -5,49 +5,6 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:avinashweb/spring-cloud-config.git
-          ignore-local-ssh-settings: true
-          strict-host-key-checking: false
+          uri: https://github.com/avinashweb/spring-cloud-config.git
           search-paths:
            - '*service'
-          private-key:  |
-                        -----BEGIN OPENSSH PRIVATE KEY-----
-                        b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABBewTW44y
-                        GxJGvM+lp3GhRkAAAAEAAAAAEAAAGXAAAAB3NzaC1yc2EAAAADAQABAAABgQDbdhoHvhJB
-                        D/Y+OEeWprmgRhYUBEAvg2aPukT1BxWj1rmna4n6BeuSpMKj9NDnzjlx+4K21zOq0h0Ydj
-                        Jx+oC0WEZYq6A83MELETxrKsOkCAUThBm3Boaa+MA9HimYjpgvUWnFh3NOmRX76GHWzSS8
-                        eXgtaJFnkmk0IIW7OZsgKuykVIpldaYTkbumtNpRH/Ik+PDD8SIbhOFtNXguE2PF8Vfxm1
-                        /rigb4pTUXxtXi9GoXju400zdl3joS/pfNGibCJjB5vkgMozmozXEunoBCbBWxDaFVnI5O
-                        0qFSU3K4sKdRgYNb5cVpMOjtBL0/i0WD5tPeFxs2l9i1G083StacBjq9R1eKlmLjyZim4p
-                        kCkldxSb7r4zjPG7s6EH050zDcx9XLTpF3IUsAXmEClD+jUrtOU86ZRZXzDDIZ3gfF/dxO
-                        LNa1AtcsXbqNAI4KIHMSE4hARJ0gZ9D1IaRlstIOc6x5qnCs1C+q1wCQkVoObv8RnCxCQA
-                        qy38C55BhfbW8AAAWQOyQsCVRV4bTvgknOQpqWvuxMoKURQfYNG58C9wB3Ze3l0Y89rTzu
-                        NqUOPUeZgJ4My8Y8Vzgdt4Z7ya98MGjQOmzEbBIoL+99YpikAu7Aaor1lBjJh4unHxifH6
-                        fqScVuOni6t/8KYc9nSNfrc+gW3edZ9h6WfwScdUCjUmDlM8CE/5igajEwO/CeXQFVXdhv
-                        Pf+tLD24fgzLBpRxOZFu51mVND6S0/RUE5OZjdFM4i+dM8czixvFFLN1aAMU9KczKr/ecB
-                        d3gziWVuKsbiTN4CV4LhLxWB+6Y37Lqr4+g55PfYqPtzhvWjqWCbJwEFBYqW/A2tNYg7xS
-                        yGbD9w4EfN0YrJdzWpd1JRuLbuu6IYsP9aDfUaOvgPMoVEEDzzdJGL1W2GvmwWBGahxwi/
-                        AjSDZnaTg+oSfSdt9cP9l5WU8UIb1/AbAAeOfTwZ69BZtFl2HDdDj0s5Ty62abJ1/8GpS6
-                        O06nIY3LZqLYlpNYh7P2Dt+YNV0eoQivU2HR/JMAAlv8kR3DMqTrcmIC0YKM1lTXcoFHqL
-                        12kLHq/eRI9ust+Yx0YAHYOs/t72PcCjIKrEc9DMXvB2El43BNKuCliR8Tt0iFz8amWWsu
-                        xOmJ1psknX+Qq+r7gSCVdP/G/sPfgkn2GBro+G2pSImIArma6rNDKtJ8eRbscdfqvV5cis
-                        v9E74SJVtxlwBvytdWV0ceT2NCBFfugl6WyhHcYxbl3dhRjqC+yuiAqY9kJcvIbc+pSVGZ
-                        j2GbpGv3bolMIELhGBG4wWkhXk7FqUb51q2jsEXmNwutGGkdP7BqHIsVsS7d0q7Suuppn3
-                        ahk6RYcTNrL5dr2CzM2uCZ1sIVBjL7mTWbdAdBUPbS/K61GEfx1De3HHNdMFo5qL5MXqxM
-                        vpRU+jXi7CE7Zwu8KFvFE2r0znV3GUykTU2AQxpGlYpge4qzLeVLrKmp0MmvNs1HVGki0A
-                        SJU5xKGu90lxJGXDySwdugAe36iLRNr3uu0e0qsO0X0u0bAEmBG/ayiRuSqWdk2vIRM0dU
-                        TjXHAidi8zPY9JA24+EG37R6ocBo4rDeH/jj5vyIh7b5aN2fMpC3tvg544jkzA6Plfclj5
-                        +ScpWxMsOIeyqCXMrJ82Psf9GQlRtFYzoiNPnse4/avxsc9WSgpVg0Aw+ZYdJ3kx2Ifmx9
-                        BzNfV2VKTM0ohN0u7PHDWDwSsYuFQBXOkKMrk18MyWZqUslWgWG+wRLRBNbZbA0Da5fik3
-                        OqqGD4OffD74a3FCHb6gZ1nk5FTc82f/8edENZvXThrRJ2u2pt4oh5N9gZmqx6tPeYSw+s
-                        /F2TOsSs5FDZljaoL9Xmv16kSEaLmYEaNycqaBug3LnKnt3o4f0CJGGpsy9aWU5Gs3TAq9
-                        RFYTohdw5TgAdEmp+Xh8S3nYk5z7vNeJNbYoz6dIo/adUWA1czxyRTPTdwNs8zzQaWxjb3
-                        kRii5ENQ90eDiQ4Axh29Jxjbrjju4onVdmDOe51BJTG9zbvyWJZZ3cHHR5W3YvKdI+u504
-                        +gvror1wL46YuZxyqlAhi7Q6HkFfkcYj0MarrLoN5ve+CNT+nUXePlLacMp//qNaT80zSR
-                        ls6v5hwvxOurh7qc1YAHyXPSCOQT6xzbyTjoA3ZW5q/qxktRACXNI+1zgG2A5CSI1obMOI
-                        poaRxWRh0fjLRRaEfTEN/6fp262y8Q5R7T3AldOELUb8XjuGxXmVF2RLl29TaO/J11nX3g
-                        0+Sml6ENfLJ4WfpfF92nN0QXIwgSRhA7uubKu8OmiCVEwRiNJaaGYCOKnFHz7jW3cp8G2h
-                        rCbZt5XMykOF1ug/18XBjxz6LVYPWifkXEnyjGZzyJI8e0eqI0x1YK4hjvHJxiky6zI9Vi
-                        4LlHmwd6Rg+S9QKDALGi1zx2afI=
-                        -----END OPENSSH PRIVATE KEY-----
-                                               
